@@ -38,7 +38,7 @@ export default function NavItem({
 }: NavItemProps) {
   return (
     <div
-      className={`cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center gap-1
+      className={`cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center gap-1 transition-all duration-300
         ${
           active
             ? "bg-[#3F424D] rounded-full text-[#AAAEB9]"
