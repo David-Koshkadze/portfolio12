@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface NavItemProps {
@@ -37,6 +38,7 @@ export default function NavItem({
   handleClick,
 }: NavItemProps) {
   return (
+    <Link href={`/#${toLink}`}>
     <div
       className={`cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center gap-1 transition-all duration-300
         ${
@@ -52,5 +54,6 @@ export default function NavItem({
         <div className="w-1 h-1 bg-[#AAAEB9] rounded-full"></div>
       ) : null}
     </div>
+    </Link>
   );
 }
