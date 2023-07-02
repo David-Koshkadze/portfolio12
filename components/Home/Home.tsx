@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function HomePage() {
   return (
-    <section id="home" className="h-screen">Home</section>
-  )
+    <section name="home" id="home" className="h-screen">
+      Home
+    </section>
+  );
 }

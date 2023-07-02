@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import React from "react";
 
 interface NavItemProps {
@@ -38,22 +39,25 @@ export default function NavItem({
   handleClick,
 }: NavItemProps) {
   return (
-    <Link href={`/#${toLink}`}>
-    <div
-      className={`cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center gap-1 transition-all duration-300
+    <Link 
+      to={toLink}
+      spy={true}
+    >
+      <div
+        className={`cursor-pointer w-[60px] h-[60px] flex flex-col items-center justify-center gap-1 transition-all duration-300
         ${
           active
             ? "bg-[#3F424D] rounded-full text-[#AAAEB9]"
             : "bg-transparent text-[#656A7B]"
         }
       `}
-      onClick={handleClick}
-    >
-      <IconWrapper size={active ? "32" : "24"}>{icon}</IconWrapper>
-      {active ? (
-        <div className="w-1 h-1 bg-[#AAAEB9] rounded-full"></div>
-      ) : null}
-    </div>
+        onClick={handleClick}
+      >
+        <IconWrapper size={active ? "32" : "24"}>{icon}</IconWrapper>
+        {active ? (
+          <div className="w-1 h-1 bg-[#AAAEB9] rounded-full"></div>
+        ) : null}
+      </div>
     </Link>
   );
 }
