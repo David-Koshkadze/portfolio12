@@ -1,14 +1,18 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+import React from "react";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="h-screen">
+    <section id="projects" className="h-screen pt-10">
       {/* Project Card */}
-      <h1 className="text-xl">Projects I have done</h1>
+      <h1 className="text-2xl my-8 text-center">Projects I have done</h1>
 
-      <ProjectCard />
-      <ProjectCard />
+      <div className="grid grid-cols-3 gap-10">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </section>
-  )
+  );
 }
