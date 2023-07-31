@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {children}
         <div className="space stars1"></div>
         <div className="space stars2"></div>
         <div className="space stars3"></div>
-        {children}
       </body>
     </html>
   );
