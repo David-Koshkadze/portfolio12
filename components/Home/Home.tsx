@@ -1,12 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import photoMe from "../photome.jpg";
 
 export default function HomePage() {
   return (
     <section
       id="home"
-      className="h-screen border border-yellow-300 pt-28"
+      className="h-screen pt-28"
     >
       <div>
         <h1 className="text-5xl pb-10">David Koshkadze</h1>
