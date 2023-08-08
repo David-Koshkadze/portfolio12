@@ -11,6 +11,9 @@ module.exports = {
         "body-black": "#15161A",
       },
     },
+    fontFamily: {
+      'rubik': "Rubik"
+    }
   },
   plugins: [],
 };

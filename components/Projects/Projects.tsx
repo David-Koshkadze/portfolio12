@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import ImgOne from '@/public/pericare_image.png'
 
 export default function Projects() {
   return (
@@ -9,7 +10,7 @@ export default function Projects() {
 
       <div className="grid grid-cols-3 gap-10 ">
         <ProjectCard
-          imageUrl="https://example.com/project1-image.jpg"
+          imageUrl={ImgOne}
           liveDemoUrl="https://example.com/project1-demo"
           codeUrl="https://github.com/username/project1"
           title="Project 1"
