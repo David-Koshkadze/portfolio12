@@ -14,7 +14,7 @@ export default function HomePage() {
             and code comes to life!
           </p>
 
-          <p className="bg-teal-600 w-fit text-white py-2 px-3 rounded-md">
+          <p>
             As a skilled web developer, I bring a passion for crafting
             exceptional digital experiences that captivate users and drive
             results.

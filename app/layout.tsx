@@ -16,6 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <div className="fixed bg-white py-1 px-2">
+          This is my new website and currently working on it
+        </div>
         {children}
         <div className="space stars1"></div>
         <div className="space stars2"></div>
