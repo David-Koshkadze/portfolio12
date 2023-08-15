@@ -4,7 +4,7 @@ import ImgOne from '@/public/pericare_image.png'
 
 export default function Projects() {
   return (
-    <section id="projects" className="h-screen pt-10">
+    <section id="projects" className="pt-10">
       {/* Project Card */}
       <h1 className="text-2xl my-8 text-center">Projects I have done</h1>
 
