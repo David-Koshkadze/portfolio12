@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <section id="home" className="h-screen pt-28 font-rubik">
+    <section id="home" className="pt-28 font-rubik">
       <div className="border border-yellow-300 text-center">
         <span>👋 Hi there! </span>
         <h1 className="text-4xl mb-10 font-bold">I am David Koshkadze</h1>

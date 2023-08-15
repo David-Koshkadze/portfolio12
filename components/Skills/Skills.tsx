@@ -245,13 +245,15 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen border grid place-items-center"
+      className="border"
     >
       <div className="text-center w-full">
-        <h1 className="text-3xl font-rubik">Skills</h1>
-        <div className="flex gap-6 h-16 border flex-nowrap">
+        <h1 className="text-4xl font-rubik mt-32 mb-16">Skills and Programming Languages</h1>
+        <div className="grid grid-cols-6 grid-rows-2 gap-y-16 mx-auto border">
           {devIconsData.map((item, idx) => (
-            <>{item.icon}</>
+            <div className="w-16 h-16">
+              <>{item.icon}</>
+            </div>
           ))}
         </div>
       </div>
